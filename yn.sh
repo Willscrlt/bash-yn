@@ -1,4 +1,15 @@
 #!/bin/bash
+#
+# Script to prompt for a yes or no response from the user.
+# Copyright (C) 2014 by Will Murray (Willscrlt) - Some Rights Reserved
+# Permission to copy and modify is granted under the LGPL v3 or later license.
+# Last revised 2005-07-25
+#
+# Usage:  if yn \"[PROMPT]\" <TIMEOUT> [DEFAULT]; then ...
+#   -or-  yn --help
+#   -or-  yn --version
+# 
+
 function yn() {
         # Use case-insensitive comparisons
         shopt -s nocasematch

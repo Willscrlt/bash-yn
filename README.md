@@ -6,6 +6,8 @@ the user with an optional custom prompt, customizable timeout, and/or optional
 default value. Repeats until valid input is received. Returns either 0 (for a
 no response) or 1 (for a yes).
 
+Version 1.0.0 (2014-07-25): Initial release
+
 The built-in help describes the function:
 ```bash
 Usage: if yn "[PROMPT]" <TIMEOUT> [DEFAULT]; then ...

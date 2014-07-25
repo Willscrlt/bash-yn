@@ -1,4 +1,18 @@
 #!/bin/bash
+#
+# Script to test most of yn.sh's functionality.
+# Copyright (C) 2014 by Will Murray (Willscrlt) - Some Rights Reserved
+# Permission to copy and modify is granted under the LGPL v3 or later license.
+# Last revised 2005-07-25
+#
+# Usage: test_yn.sh
+#
+
+# Include the function
+source yn.sh
+
+
+# A quickie function that uses yn.sh to continue or ext after each test.
 function continue() {
 	if yn "
 Continue to next test? (Y/n) " 0 Y; then
@@ -7,9 +21,8 @@ Continue to next test? (Y/n) " 0 Y; then
 	return 1;
 }
 
-# Include the function
-source yn.sh
 
+# Start the tests
 
 echo -e "\n\E[1;36mTest #1: yn version information"; tput sgr0
 echo -e "Usage: \E[1myn --version\n"; tput sgr0
