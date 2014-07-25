@@ -9,7 +9,7 @@ no response) or 1 (for a yes).
 Version 1.0.0 (2014-07-25): Initial release
 
 The built-in help describes the function:
-```bash
+```
 Usage: if yn "[PROMPT]" <TIMEOUT> [DEFAULT]; then ...
 yn (Yes or No) is a simple Bash shell script for Linux that waits for a
 yes or no response from the user with an optional custom PROMPT, TIMEOUT,
@@ -38,17 +38,17 @@ Exit status:
   0  if the entry evaluated to Yes 
   1  if the entry evaluated to No
 
-Note: this may seem backward, but it works with `if` like this:
-| **if** yn; **then**
+Note: this may seem backward, but it works with if like this:
+| if yn; then
 |   #true
-| **else**
+| else
 |   #false
-| **fi**
-See also <[http://www.gnu.org/software/bash/manual/bashref.html#Exit-Status]>
+| fi
+See also <http://www.gnu.org/software/bash/manual/bashref.html#Exit-Status>
 
-GIT page:       <[https://github.com/Willscrlt/bash-yn]>
-Created by:     **Will Murray (Willscrlt)** <[http://willmurray.name/]>
-Bug reports to: <[http://willmurray.name/contact]>
+GIT page:       <https://github.com/Willscrlt/bash-yn>
+Created by:     Will Murray (Willscrlt) <http://willmurray.name/>
+Bug reports to: <http://willmurray.name/contact>
 ```
 
 For additional examples, just run the included **test_yn.sh** file.
