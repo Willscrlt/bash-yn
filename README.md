@@ -52,3 +52,8 @@ Bug reports to: <http://willmurray.name/contact>
 ```
 
 For additional examples, just run the included **test_yn.sh** file.
+
+You can also add this function to your `.bash_profile` file so that
+**yn** is available to you every time that that you logon. Simply add
+`source <path_to_script>/yn.sh` to the file, and then you can use
+the function whenever you want to.
